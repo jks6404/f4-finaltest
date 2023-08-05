@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+nav {
+    padding: .7rem 1.5rem;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #F05A22;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: start;
+    justify-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav img{
+    display: flex;
+    height: 30px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding-right: 45%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#head{
+  padding-left: 2.5em;
+}
+
+/* Home Page styling starts */
+#search{
+    /* background-color: #F05A22; */
+    border-radius: 0.5em;
+    width: 90%;
+    margin: 1em;
+    margin-bottom: 2em;
+    margin-left: 3em;
+}
+#search-in{
+    width: fit-content;
+    display: flex;
+    align-items: self-start;
+    gap: 20px;
+    padding-left: 1em;
+    font-weight: lighter;
+}
+   
+.home-container {
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2rem;
+}
+
+.post {
+    border: 1px solid #fff;
+    padding: .2rem .2rem .5rem;
+    border-radius: 3rem;
+    box-shadow: -1px 6px 15px 0px #C3C3C3;
+
+}
+.post>img {
+    width: 100%;
+    /* height: fit-content; */
+    padding: 1em;
+    /* border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem; */
+    border-radius: 3rem;
+}
+.post>p,
+.post>h3 {
+    padding: 0 .5rem;
+  
+}
+.post>p {
+    font-size: 1.4rem;
+    margin: 0.3rem 0;
+    opacity: 0.5;
+}
+.post>h3 {
+    font-size: 1.4rem;
+    margin: .5rem 0 .7rem;
+}
+
+#read{
+    color: orangered;
+    cursor: pointer;
+    font-weight: bolder;
+    opacity: 1;
+}
+
+/* Details Page styling starts */
+.divi{
+    display: flex;
+}
+.btn{
+    background-color:#fff;
+    color: black;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 1em;
+    width: 8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.btn1{
+    background-color:#fff;
+    color: black;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 1em;
+    width: 8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.btn.active {
+    background-color: #F05A22;
+    color: #fff;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .btn1.active {
+    background-color: #F05A22;
+    color: #fff;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+.details-container {
+    padding: 0 2rem;
+    
+}
+.details-container>h2 {
+    font-size: 1.8rem;
+}
+.details-container>img {
+    width: 300px;
+    margin: 1rem 0;
+    border-radius: 0.7rem;
+    box-shadow: -1px 6px 15px 0px #C3C3C3;
+
+}
+.details-container>div>h3 {
+    font-size: 1.6rem;
+    margin: -0.4rem 1rem;
+    color: #fff;
+}
+.details-container>p {
+    font-size: 1.4rem;
+}
+
+.card{
+    display: flex;
+    margin: -6.5rem 1rem;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+
+
+.details-container1 {
+    padding: 0 2rem;
+}
+.details-container1>h2 {
+    font-size: 1.8rem;
+}
+.details-container1>img {
+    width: 300px;
+    margin: 1rem 0;
+    border-radius: 0.7rem;
+}
+.details-container1>h3 {
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+}
+.details-container1>p {
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 992px) {
+    .home-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home-container {
+        grid-template-columns: 1fr;
+    }
 }
